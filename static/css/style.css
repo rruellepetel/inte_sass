@@ -1,53 +1,41 @@
-/*
-Error: Invalid CSS after "    width:": expected expression (e.g. 1px, bold), was "}"
-        on line 37 of static/css/scss/style.scss
+body {
+  background-color: #F5F8FA; }
 
-32:     color: blue;
-33:     border-radius: 3px;
-34:     border: 1px solid blue;
-35:     background-color: white;
-36:     width: 
-37: }
+.profil {
+  border-radius: 50%;
+  width: 3rem; }
 
-Backtrace:
-static/css/scss/style.scss:37
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:227:in `expected!'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:673:in `assert_expr'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:63:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1041:in `sass_script'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:894:in `value!'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:767:in `block in try_declaration'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1155:in `rethrow'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:780:in `try_declaration'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:709:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:655:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:647:in `ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    width:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 37 of static/css/scss/style.scss\A \A 32:     color: blue;\A 33:     border-radius: 3px;\A 34:     border: 1px solid blue;\A 35:     background-color: white;\A 36:     width: \A 37: }"; }
+nav {
+  background-color: #3097D1; }
+  nav #logo {
+    width: 10%; }
+  nav ul {
+    list-style-type: none;
+    display: inline-block; }
+    nav ul li {
+      display: inline-block;
+      color: white; }
+    nav ul input {
+      color: grey; }
+
+button {
+  color: blue;
+  border-radius: 3px;
+  border: 1px solid blue;
+  background-color: white;
+  padding: 0.5em 1em; }
+
+main {
+  position: absolute; }
+  main .profil {
+    margin-right: 1em; }
+  main h2 {
+    display: inline-block; }
+  main section {
+    background-color: white;
+    margin: 0 1em; }
+
+aside article {
+  background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
